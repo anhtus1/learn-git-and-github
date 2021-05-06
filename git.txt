@@ -1,10 +1,27 @@
-tạo folder rồi git init
+tạo folder trước rồi git init
 git diff: dùng trước git add, so sánh 2 file trước sau
+git checkout -- tenFile / git restore tenFile: xóa thay đổi (undo) những file chưa lên staging, khôi phục về trạng thái trên repository (trước git add)
 git add .
+git reset HEAD <file> / git restore --staged <file>: đưa file trên staging về working
 
 
 git log : các commit
 git show + commit_id: nội dung commit
+
+git brach: xem branch
+git checkout -b feature/dog-class: tạo nhánh 'feature/dog-class' và chuyển sang nhánh đó
+git checkout <branch>: chuyển branch
+
+A<---B
+chuyển sang A trước
+rồi merge B
+git checkout A
+git merge B
+
+git branch -D <branch>: xóa branch
+git reset --soft <commit>: repository quay về commit đó, và đưa các commit sau nó nằm trong staging
+git reset --mixed <commit>: ----------------------------, ----------------------- về working
+git reset --hard <commit>: ------------------------------, xóa mọi thay đổi trong working sau commit đó
 
 working directory: trên máy tính
 staging area: đã git add
