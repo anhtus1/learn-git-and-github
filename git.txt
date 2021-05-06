@@ -23,6 +23,8 @@ git reset --soft <commit>: repository quay về commit đó, và đưa tất c�
 git reset --mixed <commit>: ----------------------------, ----------------------- về working, không thay đổi working hiện tại
 git reset --hard <commit>: ------------------------------, xóa mọi thay đổi trong working sau commit đó
 
+tạo file .gitignore: tạo text chứa tên file không cần bỏ vào git
+
 working directory: trên máy tính
 staging area: đã git add
 git repository: chỉ thêm được những file nằm trong staging area
