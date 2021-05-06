@@ -19,8 +19,8 @@ git checkout A
 git merge B
 
 git branch -D <branch>: xóa branch
-git reset --soft <commit>: repository quay về commit đó, và đưa các commit sau nó nằm trong staging
-git reset --mixed <commit>: ----------------------------, ----------------------- về working
+git reset --soft <commit>: repository quay về commit đó, và đưa tất cả commit sau nó về staging, không thay đổi working hiện tại
+git reset --mixed <commit>: ----------------------------, ----------------------- về working, không thay đổi working hiện tại
 git reset --hard <commit>: ------------------------------, xóa mọi thay đổi trong working sau commit đó
 
 working directory: trên máy tính
