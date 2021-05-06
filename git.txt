@@ -1,1 +1,6 @@
 tạo folder rồi git init
+git add .
+
+
+git log : các commit
+git show + commit_id: nội dung commit
