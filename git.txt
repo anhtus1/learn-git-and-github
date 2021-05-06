@@ -1,6 +1,12 @@
 tạo folder rồi git init
+git diff: dùng trước git add, so sánh 2 file trước sau
 git add .
 
 
 git log : các commit
 git show + commit_id: nội dung commit
+
+working directory: trên máy tính
+staging area: đã git add
+git repository: chỉ thêm được những file nằm trong staging area
+gitk: xem bằng GUI
