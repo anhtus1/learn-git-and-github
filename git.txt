@@ -38,4 +38,34 @@ git remote add origin https://github.com/anhtus1/dog-cat-mouse.git
 git remote -v: xem đang ở github nào
 git push -u origin main
 git push
-git pull
+git pull: tải commit mới nhất trên github về working
+
+git push origin <branch>: thêm một branch mới lên github, hoặc push commit mới lên github
+
+
+//leader mearge feature của partner
+partner muốn merge branch vào main thì lên github
+nhấn vào branch
+tìm your branch, nhấn new pull request
+leader vào file changed, review code và comment
+parter chỉnh code ở working và push lên github
+leader vào check và merge vào main
+git branch -D <branch>: xóa branch sau khi merge
+hoặc
+leader muốn down code về mấy check
+git fetch origin <branch>: down branch partner về máy
+leader chuyển branch feature và tự check trên máy mình
+
+
+//partner sửa xung đột với branch master và branch feature
++ chuyển sang branch master
++ pull commit mới nhất về
++ chuyển sang branch feature
++ gõ git rebase master
++ chỉnh xung đột
++ git add file xung đột
++ gõ git rebase --continue
++ xong git push origin <feature> -f: -f bởi vì git nó đã xóa các commit trước
+
+
+
