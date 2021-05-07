@@ -1,3 +1,4 @@
+git: dùng để quản lý file
 tạo folder trước rồi git init
 git diff: dùng trước git add, so sánh 2 file trước sau
 git checkout -- tenFile / git restore tenFile: xóa thay đổi (undo) những file chưa lên staging, khôi phục về trạng thái trên repository (trước git add)
@@ -29,3 +30,12 @@ working directory: trên máy tính
 staging area: đã git add
 git repository: chỉ thêm được những file nằm trong staging area
 gitk: xem bằng GUI
+
+
+
+github: chia sẽ file
+git remote add origin https://github.com/anhtus1/dog-cat-mouse.git
+git remote -v: xem đang ở github nào
+git push -u origin main
+git push
+git pull
