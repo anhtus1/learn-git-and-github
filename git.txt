@@ -57,15 +57,22 @@ git fetch origin <branch>: down branch partner về máy
 leader chuyển branch feature và tự check trên máy mình
 
 
-//partner sửa xung đột với branch master và branch feature
+//partner sửa conflict xung đột với branch master và branch feature
 + chuyển sang branch master
 + pull commit mới nhất về
 + chuyển sang branch feature
-+ gõ git rebase master
+-cách 1: hạn chế dùng
++ bắt buộc phải commit all file trước rebase
++ gõ git rebase <branch main>
 + chỉnh xung đột
 + git add file xung đột
 + gõ git rebase --continue
 + xong git push origin <feature> -f: -f bởi vì git nó đã xóa các commit trước
-
++ leader merge feature vào master
+cách 2: nên dùng
++ git merge master: update branch feature với master mới nhất
++ chỉnh conflict
++ commit merge master
++ git push origin <feature branch>
 
 
